@@ -28,27 +28,39 @@ Distribución resultante: aelsornidpvmutbjgycqhf
 
 # Instrucciones
 
-1- Clonar repo: git clone https://github.com/IvoPelayo/ionic-job-riddle-decoder
+1- Clonar repo: 
+
+```
+git clone https://github.com/IvoPelayo/ionic-job-riddle-decoder
+```
 
 2 - Instalar ionic y cordova:
 
+```
 \[sudo] npm i -g ionic
 
 \[sudo] npm i -g cordova
+```
 
 3- Instalar dependencias: 
 
+```
 \[sudo] npm install \[--save --save-dev] \[--unsafe-perm]
+```
 
 *En caso de errores con linux probar parámetros adicionales.
 
 En caso que la libreria node-sass genere problemas:
 
+```
 \[sudo] npm rebuild node-sass
+```
 
-Ejecutar en navegador: 
+Ejecutar en navegador:
 
+```
 ionic serve
+```
 
 A jugar!
 
