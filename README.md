@@ -64,4 +64,4 @@ ionic serve
 
 A jugar!
 
-# Creado y realizado por Ivo Pelayo Perpiñá
+** Creado por Ivo Pelayo Perpiñá
