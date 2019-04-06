@@ -16,7 +16,7 @@ A partir de una distribución base, se arma todas las combinaciones equivalentes
 
 A partir de esto es simplemente prueba y error, tomando como punto de partida de las combinaciones las palabras que pueden identificarse a simple vista (articulos, palabras con errores de solo un caracter). A medida que se alteran las combinaciones el texto resultante va adquiriendo coherencia. En caso de empeorar el resultado se tiene un botón para volver atras los movimientos (en el toolbar). Un cambio de distribución base reinicia todo el juego y sus movimientos previos.
 
-Todo la logica de la aplicación puede observarse en la clase [HomePage](https://github.com/ivoPelayo/ionic-job-riddle-decoder/blob/master/src/app/home/home.page.ts), junto a las siguientes modelos utilizados: [Models](src/app/models/)
+Todo la logica de la aplicación puede observarse en la clase [HomePage](src/app/home/home.page.ts), junto a las siguientes modelos utilizados: [Models](src/models/)
 
 # Resultado:
 
