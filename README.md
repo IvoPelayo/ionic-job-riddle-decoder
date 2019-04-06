@@ -26,5 +26,29 @@ Texto: en las arenas bailan los remolinos el sol juega en el brillo del pedregal
 
 Distribución resultante: aelsornidpvmutbjgycqhf
 
+# Instrucciones
 
-Creado y realizado por Ivo Pelayo Perpiñá
+1- Clonar repo: git clone https://github.com/IvoPelayo/ionic-job-riddle-decoder
+
+2 - Instalar ionic y cordova:
+
+\[sudo] npm i -g ionic
+\[sudo] npm i -g cordova
+
+3- Instalar dependencias: 
+
+\[sudo] npm install \[--save --save-dev] \[--unsafe-perm]
+
+*En caso de errores con linux probar parámetros adicionales.
+
+En caso que la libreria node-sass genere problemas:
+
+\[sudo] npm rebuild node-sass
+
+Ejecutar en navegador: 
+
+ionic serve
+
+A jugar!
+
+# Creado y realizado por Ivo Pelayo Perpiñá
