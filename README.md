@@ -33,6 +33,7 @@ Distribución resultante: aelsornidpvmutbjgycqhf
 2 - Instalar ionic y cordova:
 
 \[sudo] npm i -g ionic
+
 \[sudo] npm i -g cordova
 
 3- Instalar dependencias: 
