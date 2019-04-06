@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Job Decoder
+    </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only *ngIf="moves.length" (click)="unDoCombinationChange()">
+        <ion-icon name="undo"></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <p>Original text: <small>{{ originalText }}</small></p>
+  <p>Calculated distribution: {{ originalDistribution.orderedDistribution }}</p>
+
+  <ion-item-divider></ion-item-divider>
+  
+
+  <ion-title> Let the games begin!</ion-title>
+
+  <ion-item>
+    <ion-label top>Base distributions</ion-label>
+    <ion-select [(ngModel)]="selectedDistribution" (ionChange)="onDistributionChanged()">
+      <ion-select-option *ngFor="let item of baseDistributions; let i = index" [value]="i">{{item.name}}</ion-select-option>
+    </ion-select>
+  </ion-item>
+
+  <ion-item-divider></ion-item-divider>
+
+  <ion-title> Start mixing</ion-title>
+
+  <ion-grid *ngIf="combination && selectedDistribution != undefined">
+    <ion-row *ngFor="let item of combination.items; let i = index">
+      <ion-col col-6>{{item.oLetter}} => </ion-col>
+      <ion-col col-6>
+        <ion-item>
+          <ion-input type="text" [(ngModel)]="item.rLetter" minlength="1" maxlength="1"  (ionInput)="onCombinationItemChanged(i)"></ion-input>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-item-divider></ion-item-divider>
+
+  <p *ngIf="resultText">Result: {{resultText}}</p>
+  <p *ngIf="resultDistribution">Result distribution: {{ resultDistribution.orderedDistribution }}</p>
+</ion-content>
